@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Final de Alan Espinosa</title>
+
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+
+	<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<!------ Include the above in your HEAD tag ---------->
+  
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+<header>
+	
+	<div class="timlogo"><h1>Desarrollo de Aplicaciones Multimedia: Agosto 2022</h1></div>
+	<div class="nav-modal">
+		<div class="blob"></div>
+		<nav>
+			<ul>
+				<li><a href="#">Modelos 3D</a>
+					<ul>						
+						<li><a href="https://drive.google.com/drive/folders/19DeQ34f55Q63p-PEMPL35Ru_FvbCr_ZP?usp=sharing">3 Modelos 3D</a></li>
+						<li><a href="https://drive.google.com/drive/folders/12M7XxJPjQz0BAUhSOReypAkOaBDf-SCT?usp=sharing">Wings 3D</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Realidad Virtual</a>
+					<ul>						
+						<li><a href="https://alanespinosa.github.io/Plugins/personaje.html">Escenario virtual con Mixamo</a></li>
+						<li><a href="https://alanespinosa.github.io/Plugins/index.html">Escenario con plano y primitivas</a></li>
+						<li><a href="https://alanespinosa.github.io/TourVirtual/index.html">Tour Virtual</a></li>
+						<li><a href="https://drive.google.com/drive/folders/1OIrZ1aasoIVNIya5RXDelcIV70c2QUFt?usp=sharing">Marcardor Personalizado</a></li>
+
+					</ul>
+				</li>
+				<li><a href="#">Realidad Aumentada</a>
+					<ul>
+						<li><a href="https://alanespinosa.github.io/RealidadAumentada/index.html">Figuras</a></li>
+						<li><a href="https://alanespinosa.github.io/RealidadAumentada/modelo_glb.html">Modelo 3D</a></li>
+					</ul>
+				</li>
+				<li><a href="#">X3D</a>
+					<ul>
+						<li><a href="https://alanespinosa.github.io/X3D/index.html">Sistema Solar</a></li>
+						<li><a href="https://alanespinosa.github.io/ComputadoraX3d/index.html">Computadora</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Roll-Over</a>
+					<ul>
+						<li><a href="https://alanespinosa.github.io/Budismo/index.html">Primer Parcial</a></li>
+						<li><a href="https://alanespinosa.github.io/Planetas/index.html">Infografía Planetas</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Animación y SVG</a>
+					<ul>
+						<li><a href="https://alanespinosa.github.io/Solar/">Sistema Solar animado</a></li>
+						<li><a href="https://alanespinosa.github.io/SVG/index.html">SVG</a></li>
+					</ul>
+				</li>
+				
+			</ul>
+		</nav>
+	</div>
+	<div class="head">
+
+		<div class="tile burger">
+			<div class="meat">
+				<div class="line one"></div>
+				<div class="line two"></div>
+				<div class="line three"></div>
+			</div>
+		</div>
+	</div>
+</header>
+
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+  <script type="text/javascript">
+  	$(document).ready(function() {
+
+	$('.burger').click(function(){
+		$('header').toggleClass('clicked');
+	});
+
+	$('nav ul li').click(function(){
+		$('nav ul li').removeClass('selected');
+		$('nav ul li').addClass('notselected');
+		$(this).toggleClass('selected');
+		$(this).removeClass('notselected');
+	});
+	
+	});
+  </script>
+
+</body>
+
+</html>
