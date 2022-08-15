@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Video X3D</title>
+	<script type='text/javascript' src='https://www.x3dom.org/download/x3dom.js'> </script>
+    <link rel='stylesheet' type='text/css' href='https://www.x3dom.org/download/x3dom.css'>
+</head>
+
+<body>
+	<x3d style="width: 800px; height: 600px;">
+		<scene>
+			<group>
+				<transform>
+					<inline url="modelos3d/laptop.x3d"></inline>
+				</transform>
+
+
+				<transform translation="0 0.7 0.3" rotation="1 0 0 -0.261799">
+					<shape>
+						<appearance>
+							<MovieTexture url="video/video.mp4" loop="true" ></MovieTexture>
+						</appearance>
+						<plane ccw="true" solid="true" size="0.96, 0.65"></plane>
+					</shape>
+				</transform>
+			</group>
+		</scene>
+	</x3d>
+</body>
+
+</html>
